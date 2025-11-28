@@ -81,7 +81,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              Hello I'm
+              Hello, I'm
               <br />
               <span className="text-white mt-2 text-4xl md:text-6xl font-bold lg:text-8xl lg:whitespace-nowrap">
                 Palak
