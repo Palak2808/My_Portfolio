@@ -13,21 +13,21 @@ export default function App() {
   const [introCompleted, setIntroCompleted] = useState(false);
   return (
     <>
-      {/* {!introCompleted && (
+      {!introCompleted && (
         <IntroAnimation onFinish={() => setIntroCompleted(true)} />
-      )} */}
-      {/* {introCompleted && ( */}
-      <div className="relative gradient text-white">
-        <CustomCusrsor />
-        <Navbar />
-        <Home />
-        <Projects />
-        <Experience />
-        <Skills />
-        <About />
-        <Footer />
-      </div>
-      {/* )} */}
+      )}
+      {introCompleted && (
+        <div className="relative gradient text-white">
+          <CustomCusrsor />
+          <Navbar />
+          <Home />
+          <Projects />
+          <Experience />
+          <Skills />
+          <About />
+          <Footer />
+        </div>
+      )}
     </>
   );
 }
