@@ -17,7 +17,7 @@ export default function OverLayMenu({
         <motion.div
           className="fixed inset-0 items-center flex justify-center z-50"
           initial={{ clipPath: `circle(0% at ${origin})` }}
-          animate={{ clipPath: `circle(150% at ${origin})` }}
+          animate={{ clipPath: `circle(100% at ${origin})` }}
           exit={{ clipPath: `circle(0% at ${origin})` }}
           transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
           style={{ backgroundColor: "rgba(0, 0, 0, 0.95)" }}

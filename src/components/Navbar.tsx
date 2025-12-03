@@ -58,12 +58,12 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 z-50 transition-transform duration-300 ${
+        className={`fixed top-0 left-0 w-full flex items-center px-6 py-4 z-50 transition-transform duration-300 ${
           visible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <p className="font-bold text-2xl text-white sm:block">Palak</p>
-        <div className="block lg:absolute lg:left-1/2 lg:transform lg:translate-x-1/2">
+        <div className="font-bold text-2xl text-white sm:block">Palak</div>
+        <div className="block absolute right-8 lg:transform lg:translate-x-1/2">
           <button
             onClick={() => setMenuOpen(true)}
             className="text-white text-3xl focus:outline-none"
@@ -71,14 +71,6 @@ export default function Navbar() {
           >
             <FiMenu />
           </button>
-        </div>
-        <div className="hidden lg:block">
-          <a
-            href="#Contact"
-            className="bg-gradient-to-r from-pink-500 to-blue-500 text-white py-2 px-5 rounded-full font-medium shadow-lg hover:opacity-90 transition-opacity duration-300"
-          >
-            Reach Out
-          </a>
         </div>
       </nav>
       <OverLayMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
