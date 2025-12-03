@@ -22,7 +22,7 @@ export default function About() {
           <div
             key={i}
             className={`absolute rounded-full animate-pulse bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] ${c}`}
-          ></div>
+          />
         ))}
       </div>
       <div className="relative z-10 max-w-6xl w-full mx-auto px-6 md:px-10 lg:px-12 py-20 flex flex-col gap-12">
@@ -37,19 +37,21 @@ export default function About() {
             <img src={photo} alt="profile" className="absolute inset-0 " />
           </motion.div>
           <div className="flex-1 flex justify-center text-center flex-col md:text-left">
-            <h2 className="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#1cd8d2]">
-              Palak
-            </h2>
             <p className="mt-2 text-xl text-white/90 font-semibold">
-              Frontend Developer
+              Nice to meet you!
             </p>
+            <h2 className="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#1cd8d2]">
+              I'm Palak
+            </h2>
             <p className="mt-4 text-gray-300 leading-relaxed text-base sm:text-lg max-w-2xl">
-              I build scalable, high-performance frontend interfaces using
-              React, TypeScript, Tailwind, and Redux, combining clean
-              architecture with modern development practices. Focussing on
-              optimizing UI performance, designing reusable and maintainable
-              component systems, and ensuring code quality across the
-              application.
+              I’m a Frontend Developer who enjoys building clean, scalable, and
+              intuitive user interfaces. At ShipGlobal and Gulp2Go, I’ve worked
+              on product modules used by franchise partners, vendors, and
+              end-customers, improving performance, usability, and overall
+              experience across web and mobile platforms. My work spans
+              developing reusable UI components, improving load times,
+              integrating REST APIs, and delivering responsive interfaces using
+              React, TypeScript, Tailwind, Redux, Shadcn, and custom hooks.
             </p>
             <div className="mt-6 grid grid-cols-3 gap-3 sm:gap-4 max-w-xl">
               {stats.map((item: any, i: number) => (
@@ -98,8 +100,9 @@ export default function About() {
             Agile teams to ship high-quality, user-focused products.
           </p>
           <p className="mt-4 text-gray-400 text-base sm:text-lg">
-            I focus on performance, reusable components, and clean code to
-            deliver smooth user experiences.
+            I’ve also built feature-rich systems like the Vending Machine
+            WebApp, franchise and vendor dashboards, and the SightGuide iOS app
+            during my internship at Infosys.
           </p>
         </motion.div>
       </div>

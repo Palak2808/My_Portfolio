@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import OverLayMenu from "./OverLayMenu";
-import logo from "../assets/logo.png";
 import { FiMenu } from "react-icons/fi";
 
 export default function Navbar() {
@@ -63,10 +62,7 @@ export default function Navbar() {
           visible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex items-center space-x-2">
-          <img src={logo} alt="logo" className="w-8 h-8" />
-          <p className="font-bold text-2xl text-white sm:block">Palak</p>
-        </div>
+        <p className="font-bold text-2xl text-white sm:block">Palak</p>
         <div className="block lg:absolute lg:left-1/2 lg:transform lg:translate-x-1/2">
           <button
             onClick={() => setMenuOpen(true)}

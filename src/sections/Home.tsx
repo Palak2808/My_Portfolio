@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import ParticlesBackground from "../components/ParticlesBackground";
 import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
-import avatar from "../assets/avator.png";
+import avatar from "../assets/profile.jpeg";
 
 export default function Home() {
   const roles = useMemo(
@@ -24,7 +24,7 @@ export default function Home() {
       y: -3,
       filter:
         "drop-shadow(0 0 8px rgba(13,88,204,0.9)) drop-shadow(0 0 18px rgba(16,185,129,0.8))",
-      transition: { type: "spring", stiffness: 300, damping: 15 },
+      transition: { type: "spring" as const, stiffness: 300, damping: 15 },
     },
     tap: { scale: 0.95, y: 0, transition: { duration: 0.08 } },
   };
@@ -112,8 +112,10 @@ export default function Home() {
                 View My Work
               </a>
               <a
-                href="/CV-Palak-Frontend"
+                href="/CV-Palak-Frontend.pdf"
                 download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3 text-lg rounded-full font-medium text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transition-all"
               >
                 My Resume
@@ -153,11 +155,11 @@ export default function Home() {
           />
           <motion.img
             src={avatar}
-            className="absolute top-1/2 -translate-y-1/2 object-contain select-none pointer-events-none"
+            className="absolute top-1/2 rounded-xl -translate-y-1/2 object-contain select-none pointer-events-none border border-[#1cd8d2]/25 transition-transform duration-300 ease-in-out hover:scale-105"
             style={{
               right: "-30px",
-              width: "min(45vw,780px",
-              maxHeight: "90vh",
+              width: "min(45vw,500px)",
+              maxHeight: "70vh",
             }}
             initial={{ opacity: 0, y: 40, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}

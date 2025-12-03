@@ -115,29 +115,39 @@ export default function Skills() {
   return (
     <section
       ref={sectionRef}
-      id="skilss"
+      id="skills"
       className="h-1/2 w-full pb-8 flex flex-col items-center justify-center relative bg-black text-white overflow-hidden"
     >
       {/* glow circles */}
-      <div className="absolute inset-0 ppinter-events-none">
-        <div className="relative top-1/4 left-0 w-[300px] h-[300px] rounded-gull bg-gradient-to-r from-[#302b63] via=[#00bf8f] to-[#1cd8d2] animate-pulse opacity-20 blur-[120px]" />
-        <div className="relative bottom-1/4 right-0 w-[300px] h-[300px] rounded-gull bg-gradient-to-r from-[#302b63] via=[#00bf8f] to-[#1cd8d2] animate-pulse opacity-20 blur-[120px] delay-500" />
+      <div className="absolute inset-0 pointer-events-none">
+        <div
+          className="absolute top-1/4 left-0 w-[300px] h-[300px] rounded-full 
+    bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] 
+    animate-pulse opacity-20 blur-[120px]"
+        />
+
+        <div
+          className="absolute bottom-1/4 right-0 w-[300px] h-[300px] rounded-full 
+    bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] 
+    animate-pulse opacity-20 blur-[120px] delay-500"
+        />
       </div>
+
       <motion.h2
-        className="text-4xl mt-5 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#1cd8d2] z-10"
+        className="text-5xl mt-5 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#1cd8d2] z-10"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
       >
         My Skills
       </motion.h2>
-      <motion.p className="mt-2 mb-8 text-white/90 text-base sm:text-lg z-10">
+      <motion.p className="mt-4 mb-8 text-white/90 text-base sm:text-lg z-10">
         Modern Application | Modern Technologies
       </motion.p>
       <div className="relative w-full overflow-hidden">
         <motion.div
           ref={trackRef}
-          className="flex gap-10 text-6xl text-[#1cd8d2] mt-2"
+          className="flex gap-10 text-6xl text-[#1cd8d2] mt-5"
           style={{
             x: motionDirection,
             whiteSpace: "nowrap",

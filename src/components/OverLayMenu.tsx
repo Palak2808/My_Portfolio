@@ -8,15 +8,7 @@ export default function OverLayMenu({
   isOpen: boolean;
   onClose: () => void;
 }) {
-  const navbarItems = [
-    "Home",
-    "About",
-    "Skills",
-    "Projects",
-    "Experience",
-    "Testimonails",
-    "Contact",
-  ];
+  const navbarItems = ["Home", "About", "Skills", "Projects", "Experience"];
   const isMobile = typeof window !== "undefined" && window.innerWidth < 1024;
   const origin = isMobile ? "95% 8%" : "50% 8%"; //Expanding circle should start from: near menu icon (mobile), center (desktop)
   return (
