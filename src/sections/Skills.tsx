@@ -12,14 +12,11 @@ import {
   SiTypescript,
   SiVite,
   SiZod,
-  // SiZustand,
   SiAxios,
   SiBootstrap,
-  // SiVisualstudio,
   SiGit,
   SiGithub,
 } from "react-icons/si";
-// import { TbBrandShadcnUi } from "react-icons/tb"; // unofficial but available in react-icons/tb
 
 export default function Skills() {
   const skills = [
@@ -33,15 +30,12 @@ export default function Skills() {
 
     // Frameworks / Libraries
     { icon: <SiTypescript />, name: "TypeScript" },
-    // { icon: <TbBrandShadcnUi />, name: "Shadcn UI" },
     { icon: <SiVite />, name: "Vite" },
     { icon: <SiZod />, name: "Zod" },
-    // { icon: <SiZustand />, name: "Zustand" },
     { icon: <SiAxios />, name: "Axios" },
     { icon: <SiBootstrap />, name: "Bootstrap" },
 
     // Developer Tools
-    // { icon: <SiVisualstudio />, name: "VS Code" },
     { icon: <SiGit />, name: "Git" },
     { icon: <SiGithub />, name: "GitHub" },
   ];
