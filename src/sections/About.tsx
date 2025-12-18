@@ -77,12 +77,6 @@ export default function About() {
               >
                 View Projects
               </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center rounded-lg bg-white/10 border border-white/20 text-white px-5 py-3 hover:bg-white/20 transition"
-              >
-                Get in Touch
-              </a>
             </div>
           </div>
         </motion.div>

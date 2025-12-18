@@ -106,7 +106,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               <a
-                href="projects"
+                href="#projects"
                 className="py-3 rounded-full font-medium text-lg text-white px-6 bg-gradient-to-r from-[#00bf8f] to-[#1cd8d2] shadow-lg hover:scale-105 transition-all"
               >
                 View My Work
